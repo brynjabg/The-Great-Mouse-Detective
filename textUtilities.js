@@ -12,8 +12,11 @@ function titleCase(title) {
 }
 
 describe("titleCase", () => {
-    it("works", () => {
+    it("returns a string", () => {
         expect(titleCase("the great mouse detective")).to.be.a("string");
+    });
+
+    it("capitalizes the first letter of a word", () => {
         expect(titleCase("a")).to.equal("A");
         expect(titleCase("vertigo")).to.equal("Vertigo");
         expect(titleCase("the great mouse detective")).to.equal("The Great Mouse Detective");
